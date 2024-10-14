@@ -1,18 +1,32 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-public class ThreeThenActivate : MonoBehaviour
+public class CallCounter : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    // UnityEvent to be called after the function has been called 3 times
+    [SerializeField]
+    private UnityEvent onThreeCalls;
+
+    private int callCount = 0;
+
+    // Function to be called by the UnityEvent
+    public void CallFunction()
     {
-        
+        callCount++;
+        Debug.Log($"Function called {callCount} time(s).");
+
+        // Check if the function has been called 3 times
+        if (callCount >= 3)
+        {
+            onThreeCalls.Invoke(); // Call the UnityEvent
+            // ResetCounter(); // Reset the counter if needed
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    // Optional: Reset the counter
+    // private void ResetCounter()
+    // {
+    //     callCount = 0;
+    //     Debug.Log("Counter reset.");
+    // }
 }
