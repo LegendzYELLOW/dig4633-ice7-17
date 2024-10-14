@@ -2526,14 +2526,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6821313309137376800, guid: f290f489f4196974db7a37718d9fa4c3,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2121736633}
-    - targetCorrespondingSourceObject: {fileID: 6821313309137376800, guid: f290f489f4196974db7a37718d9fa4c3,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 822336030}
-    - targetCorrespondingSourceObject: {fileID: 6821313309137376800, guid: f290f489f4196974db7a37718d9fa4c3,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 2062161436}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f290f489f4196974db7a37718d9fa4c3, type: 3}
@@ -2637,13 +2629,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 822336029}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.38268343, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: -0.074, y: 0.893, z: 0.266}
-  m_LocalScale: {x: 1.3068999, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 0.38268343, z: -0, w: 0.92387956}
+  m_LocalPosition: {x: -0.074, y: 0.893, z: 0.26600003}
+  m_LocalScale: {x: 1.3069, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 976132825}
-  m_Father: {fileID: 735139262}
+  m_Father: {fileID: 1156184563}
   m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
 --- !u!114 &822336031
 MonoBehaviour:
@@ -4000,7 +3992,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1156184563}
-  - component: {fileID: 1156184564}
   m_Layer: 0
   m_Name: BallPuzzle-C
   m_TagString: Untagged
@@ -4021,27 +4012,14 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2121736633}
+  - {fileID: 822336030}
   - {fileID: 735139262}
   - {fileID: 1913401409}
   - {fileID: 704291949}
   - {fileID: 1338292603}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1156184564
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1156184561}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdb137bea5618d04fb34d17856c0adb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 1338292602}
-  socket1: {fileID: 2121736635}
-  socket2: {fileID: 822336032}
 --- !u!1001 &1242582728
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6765,13 +6743,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2121736632}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.38268343, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 0.275, y: 0.893, z: -0.083}
-  m_LocalScale: {x: 1.3068999, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 0.38268343, z: -0, w: 0.92387956}
+  m_LocalPosition: {x: 0.27499998, y: 0.893, z: -0.082999945}
+  m_LocalScale: {x: 1.3069, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 336745770}
-  m_Father: {fileID: 735139262}
+  m_Father: {fileID: 1156184563}
   m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
 --- !u!114 &2121736634
 MonoBehaviour:
